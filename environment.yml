@@ -1,0 +1,10 @@
+name: udacity  # Your Conda environment name
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10  
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - pillow # if you don't inform the version, it will install the latest version

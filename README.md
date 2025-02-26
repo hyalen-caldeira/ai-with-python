@@ -13,7 +13,7 @@ This repository contains _REVISED_ code and associated files for the AI Programm
 * No revisions 
 
 ### Matplotlib
-* No revisions 
+* No revisions
 
 ### Quiz Notes
 * [Notes:](https://github.com/udacity/AIPND-revision/tree/master/notes "Notes") This directory contains more information about certain quizzes that are testing more challenging concepts. Additionally, one will find the [Frequently Asked Questions](https://github.com/udacity/AIPND-revision/blob/master/notes/project_intro-to-python.md) for the _Intro to Python Project_. Click on the filename to view the contents of the notes on a _quiz_ or the _Intro to Python Project_.
@@ -26,3 +26,11 @@ Each directory has a `requirements.txt` describing the minimal dependencies requ
 
 To install these dependencies with pip, you can issue `pip3 install -r requirements.txt`.
 
+-----------
+
+### Install
+* Anaconda
+  - https://www.anaconda.com/download 
+  - Managing Environments - https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+* PyTorch - https://pytorch.org/ 
+* torchvision

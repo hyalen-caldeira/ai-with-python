@@ -16,7 +16,7 @@
 
 # Functions below defined to help with "Checking your code", specifically
 # running these functions with the appropriate input arguments within the
-# main() funtion will print out what's needed for "Checking your code"
+# main() function will print out what's needed for "Checking your code"
 #
 def check_command_line_arguments(in_arg):
     """

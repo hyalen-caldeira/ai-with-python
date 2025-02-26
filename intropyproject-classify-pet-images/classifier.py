@@ -4,6 +4,7 @@ import torchvision.transforms as transforms
 from torch.autograd import Variable
 import torchvision.models as models
 from torch import __version__
+import os
 
 resnet18 = models.resnet18(pretrained=True)
 alexnet = models.alexnet(pretrained=True)
@@ -11,8 +12,14 @@ vgg16 = models.vgg16(pretrained=True)
 
 models = {'resnet': resnet18, 'alexnet': alexnet, 'vgg': vgg16}
 
+# Get the directory where the script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+# Construct the absolute path to the file
+file_path = os.path.join(script_dir, 'imagenet1000_clsid_to_human.txt')
+print("Current Working Directory:", os.getcwd())
+
 # obtain ImageNet labels
-with open('imagenet1000_clsid_to_human.txt') as imagenet_classes_file:
+with open(file_path) as imagenet_classes_file:
     imagenet_classes_dict = ast.literal_eval(imagenet_classes_file.read())
 
 def classifier(img_path, model_name):
