@@ -4,7 +4,7 @@
 #
 # TODO 0: Add your information below for Programmer & Date Created.                                                                             
 # PROGRAMMER: Hyalen Moreira Caldeira
-# DATE CREATED:                                  
+# DATE CREATED: 02/26/2025
 # REVISED DATE: 
 # PURPOSE: Classifies pet images using a pretrained CNN model, compares these
 #          classifications to the true identity of the pets in the images, and
@@ -115,6 +115,8 @@ def main():
     # and incorrectly classified breeds (if requested)
     print_results(results, results_stats, None, True, True)
     
+    sleep(10)
+
     # TODO 0: Measure total program runtime by collecting end time
     end_time = time()
     
